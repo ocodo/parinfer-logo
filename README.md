@@ -1,8 +1,22 @@
-# Parinfer logotype workshop
+# Parinfer logotype
 
-In this project I'm iterating on ideas for a Parinfer Logo. 
+This repository is a workspace for the official Parinfer logotype.
 
-[Parinfer] is a 
+Work in progress,
 
-[Parinfer]: https://github.com/parinfer/parinfer
-[Parinfer-Rust]: https://github.com/parinfer-rust/parinfer-rust
+## Previews
+
+![](previews/parinfer-logotype.png)
+
+![](previews/parinfer-logotype-white.png)
+
+![](previews/parinfer-logotype-for-light-bg.png)
+
+![](previews/parinfer-logotype-for-dark-bg.png)
+
+![](previews/parinfer-logotype-syntax-highlight-on-light.png)
+
+![](previews/parinfer-logotype-syntax-highlight-on-dark.png)
+
+
+ 
