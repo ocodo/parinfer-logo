@@ -1,3 +1,9 @@
+![](https://raw.githubusercontent.com/ocodo/parinfer-logo/master/pngs/parinfer-org-logo-128x128.png)
+![](https://raw.githubusercontent.com/ocodo/parinfer-logo/master/pngs/parinfer-org-logo-black-128x128.png)
+![](https://raw.githubusercontent.com/ocodo/parinfer-logo/master/pngs/parinfer-org-logo-white-128x128.png)
+![](https://raw.githubusercontent.com/ocodo/parinfer-logo/master/pngs/parinfer-org-logo-dark-128x128.png)
+![](https://raw.githubusercontent.com/ocodo/parinfer-logo/master/pngs/parinfer-org-logo-light-128x128.png)
+
 # Parinfer logotype
 
 This repo is the workspace for the creation and distribution of the offcial Parinfer project logo.
