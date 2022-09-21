@@ -1,0 +1,15 @@
+#!/bin/sh
+
+inkscape=/Applications/Inkscape.app/Contents/MacOS/inkscape
+git_root="$(git rev-parse --show-toplevel)"
+
+mkdir -p "$git_root"/pngs
+for image in "" "-black" "-dark" "-light" "-white"; do
+    for size in 16 32 64 128 256 640 1080 2160; do
+        $inkscape \
+        --export-width=${size} \
+        --export-filename="$git_root/pngs/parinfer-org-logo${image}-${size}x${size}.png" \
+        --export-type=png \
+         "$git_root/parinfer-org-logo${image}.svg"
+    done
+done
