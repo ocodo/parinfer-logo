@@ -23,7 +23,9 @@ jobs:
                 --export-filename=pngs/parinfer-org-logo-${image}-${size}x${size}.png \
                 --export-type=png \
                 parinfer-org-logo-${image}.svg
-     
+            done
+          done
+
       - name: Update repo
         run: |
           git add png
