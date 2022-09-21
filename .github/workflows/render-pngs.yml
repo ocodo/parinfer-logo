@@ -1,0 +1,43 @@
+name: Render PNGs
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  setup:
+  
+  render:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        image:
+          - parinfer-org-logo    
+          - parinfer-org-logo-black
+          - parinfer-org-logo-dark
+          - parinfer-org-logo-light
+          - parinfer-org-logo-white
+        size: 
+          - 256
+          - 640
+          - 1080
+          - 2160
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install inkscape
+        run: sudo apt-get install inkscape
+
+      - name: Render pngs
+        run: |
+          mkdir -p pngs/${{ matrix.image }}
+          inkscape --export-width=${{ matrix.size }} \
+                   --export-filename=${{ matrix.image }}/${{ matrix.image }}-${{ matrix.image }}x${{ matrix.image }}.png \
+                   --export-type=png \
+                   ${{ matrix.image }}.svg
+     
+      - name: Add to repo
+        run: |
+          git add png
+          git commit -m "Add/update png renders"
+          git push
