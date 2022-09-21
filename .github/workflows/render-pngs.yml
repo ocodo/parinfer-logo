@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
   
 jobs:
-  setup:
-  
   render:
     runs-on: ubuntu-latest
     strategy:
