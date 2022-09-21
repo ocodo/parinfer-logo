@@ -6,19 +6,6 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        image:
-          - parinfer-org-logo    
-          - parinfer-org-logo-black
-          - parinfer-org-logo-dark
-          - parinfer-org-logo-light
-          - parinfer-org-logo-white
-        size: 
-          - 256
-          - 640
-          - 1080
-          - 2160
 
     steps:
       - uses: actions/checkout@v3
@@ -28,13 +15,16 @@ jobs:
 
       - name: Render pngs
         run: |
-          mkdir -p pngs/${{ matrix.image }}
-          inkscape --export-width=${{ matrix.size }} \
-                   --export-filename=${{ matrix.image }}/${{ matrix.image }}-${{ matrix.image }}x${{ matrix.image }}.png \
-                   --export-type=png \
-                   ${{ matrix.image }}.svg
+          mkdir -p pngs
+          for image in "" black dark light white; do
+            for size in 256 640 1080 2160; do
+              inkscape \
+                --export-width=${size} \
+                --export-filename=pngs/parinfer-org-logo-${image}-${size}x${size}.png \
+                --export-type=png \
+                parinfer-org-logo-${image}.svg
      
-      - name: Add to repo
+      - name: Update repo
         run: |
           git add png
           git commit -m "Add/update png renders"
