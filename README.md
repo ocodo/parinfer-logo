@@ -12,7 +12,7 @@ This repo is the workspace for the creation and distribution of the offcial Pari
 | [parinfer-org-logo-light.svg](parinfer-org-logo-light.svg) | Light (#FDDEC0) For use with dark backgrounds       |
 | [parinfer-org-logo-white.svg](parinfer-org-logo-white.svg) | Pure white (#FFFFFF) for use with dark backgrounds  |
 
-Bitmap renders of each logo variant can found in `pngs/` in sizes ranging from 32px to 2160px sq.
+Bitmap renders of each logo variant can found in [`pngs/`](./pngs/) in sizes ranging from 32px to 2160px sq.
 
 ## Original design worksheets 
 
@@ -28,5 +28,5 @@ Bitmap renders of each logo variant can found in `pngs/` in sizes ranging from 3
 
 ![](previews/parinfer-logotype-syntax-highlight-on-dark.png)
 
-SVGs of the worksheets are in `svg-sources/` 
+SVGs of the worksheets are in [`svg-sources/`](./svg-sources/) 
  
