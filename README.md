@@ -4,13 +4,13 @@ This repo is the workspace for the creation and distribution of the offcial Pari
 
 ## Official Parinfer Logos
 
-| File |
-|----|
-| parinfer-org-logo.svg       | Rendered in color for use with both dark & light backgrounds | 
-| parinfer-org-logo-dark.svg  | Dark (#1B1C20) for use with light backgrounds | 
-| parinfer-org-logo-black.svg | Pure black (#000000) for use with light backgrounds | 
-| parinfer-org-logo-light.svg | Light (#FDDEC0) For use with dark backgrounds | 
-| parinfer-org-logo-white.svg | Pure white (#FFFFFF) for use with dark backgrounds | 
+| File                                                       | Usage notes                                         |
+|------------------------------------------------------------|-----------------------------------------------------|
+| [parinfer-org-logo.svg](parinfer-org-logo.svg)             | For use with both dark & light backgrounds          |
+| [parinfer-org-logo-dark.svg](parinfer-org-logo-dark.svg)   | Dark (#1B1C20) for use with light backgrounds       |
+| [parinfer-org-logo-black.svg](parinfer-org-logo-black.svg) | Pure black (#000000) for use with light backgrounds |
+| [parinfer-org-logo-light.svg](parinfer-org-logo-light.svg) | Light (#FDDEC0) For use with dark backgrounds       |
+| [parinfer-org-logo-white.svg](parinfer-org-logo-white.svg) | Pure white (#FFFFFF) for use with dark backgrounds  |
 
 Bitmap versions can be created using Inkscape, from a terminal:
 
